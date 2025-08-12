@@ -10,16 +10,20 @@
       font-style: normal;
     }
 
-    #visual-menu-page .sticky-background {
-      position: -webkit-sticky; position: sticky; top: 0;
-      z-index: 1; height: 130vh; width: 100%;
-      background-image: url('https://file.garden/aIhdnTgFPho75N46/weed2.jpg');
-      background-size: cover; background-position: center;
+    #visual-menu-page .visual-scroll {
+      position: relative;
+      padding-bottom: 100vh;
     }
-    #visual-menu-page .content-on-top { 
-      position: relative; 
-      z-index: 2; 
-      margin-top: -130vh;
+    #visual-menu-page .sticky-background {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      z-index: 1;
+      background: url('https://file.garden/aIhdnTgFPho75N46/weed2.jpg') center/cover;
+    }
+    #visual-menu-page .content-on-top {
+      position: relative;
+      z-index: 2;
     }
     #visual-menu-page .spacer { height: 25vh; }
     #visual-menu-page .btn-image-container {
@@ -100,7 +104,6 @@
         object-fit: cover;
         border-radius: 4px;
     }
-    #visual-menu-page .scroll-extender { height: 100vh; }
 
     @media (max-width: 768px) {
       #visual-menu-page .btn-image-link {
@@ -113,10 +116,11 @@
     }
   </style>
 
-  <div class="sticky-background"></div>
-  <div class="content-on-top">
-    <div class="spacer"></div>
-    <div class="btn-image-container">
+  <div class="visual-scroll">
+    <div class="sticky-background"></div>
+    <div class="content-on-top">
+      <div class="spacer"></div>
+      <div class="btn-image-container">
       
       <div class="section-title-text">
         <img class="flag-icon" src="https://flagcdn.com/w40/es.png" alt="Drapeau Espagne">
@@ -174,8 +178,8 @@
         <img class="btn-image" src="https://file.garden/aIhdnTgFPho75N46/wedding-cake-canada2.png" alt="Weed USA-Canada 4">
       </a>
     </div>
-    <div class="scroll-extender"></div>
   </div>
+</div>
 </div>
 
 <script>
